@@ -3,7 +3,7 @@
  */
 let audio_context
 const audio_element = document.querySelector("#audio")
-audio_element.src = "Jamie xx - Sleep Sound.mp3"
+audio_element.src = "Kidkanevil - Butterfly-Sattelite.mp3"
 
 //audio nodes
 let track
@@ -16,7 +16,7 @@ function main() {
     audio_context_analyzer = audio_context.createAnalyser(audio_element)
 
     audio_context_analyzer.fftSize = 1024
-    audio_context_analyzer.smoothingTimeConstant = .2
+    audio_context_analyzer.smoothingTimeConstant = .3
     track.connect(audio_context_analyzer).connect(audio_context.destination)
 
     audio_element.play()
@@ -30,7 +30,7 @@ function animate() {
     for (let i = 0; i < 200; i++) {
         initial_shape.push({
             x: (svg_canvas.viewBox.baseVal.width / 200) * i,
-            y: svg_canvas.viewBox.baseVal.height / 2 - (0 / 200) * i
+            y: svg_canvas.viewBox.baseVal.height / 1.1 - (0 / 200) * i
         })
     }
 
@@ -43,7 +43,7 @@ function animate() {
     for (let i = 0; i < fft_data_array.length; i++) {
         mutated_shape.push({
             x: (initial_shape[i].x /** ((Math.max(this.#FFTDataArray[i] + 100)) * 4)*/),
-            y: (initial_shape[i].y - Math.min(initial_shape[i].y, Math.max(fft_data_array[i] * 2 + 200, 0)))
+            y: (initial_shape[i].y - Math.min(initial_shape[i].y, Math.max(fft_data_array[i] * 10 + 1500, 0)))
         })
     }
 
