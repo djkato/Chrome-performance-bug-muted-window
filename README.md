@@ -1,4 +1,4 @@
-#Chrome mute/unmute performance bug demo
+# Chrome mute/unmute performance bug demo
 To test locally, you'll need:
 - Chrome
 - Have Node.js installed ;grab here: https://nodejs.org/en/ 
