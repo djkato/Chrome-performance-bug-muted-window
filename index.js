@@ -9,8 +9,6 @@ audio_element.src = "Jamie xx - Sleep Sound.mp3"
 let track
 let audio_context_analyzer
 
-let prev_data = new Array()
-
 function main() {
     audio_context = new AudioContext()
 
@@ -60,19 +58,6 @@ function animate() {
     path += `L ${svg_canvas.viewBox.baseVal.height} ${svg_canvas.viewBox.baseVal.height} `
     path += `Z `
     path = `<path width="100%" height="100%" d="${path}" stroke="none" fill="#c084fc"/>`
-
-    /**
-     * compare FFTData to previous ones
-     */
-    let matched_amount = 0
-    for (let prev_dat in prev_data) {
-        if (prev_dat == fft_data_array) {
-            matched_amount += 1
-        }
-    }
-    console.log(`Matched ${matched_amount} times!`)
-
-    prev_data.push(fft_data_array)
 
     svg_canvas.innerHTML = path
 
