@@ -7,7 +7,7 @@ To test locally, you'll need:
 
 how to test:
 1. Download this repo to a folder
-2. Open terminal in this folder, type `npm run serve`
+2. Open terminal in this folder, type`npm install`, wait till it's done, then `npm run serve`
 3. Go to http://localhost:3000 on your Chrome browser
 4. click start button, observe
 
