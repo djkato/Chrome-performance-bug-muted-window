@@ -1,11 +1,11 @@
 {
   "name": "performance-bug-unmuted-window",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "serve": "tiny-server"
   },
-  "author": "",
+  "author": "Djkáťo",
   "license": "ISC",
   "dependencies": {
     "tiny-server": "^1.1.1"
