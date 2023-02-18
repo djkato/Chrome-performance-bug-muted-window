@@ -1,4 +1,6 @@
 # Chrome mute/unmute performance bug demo
+To test online, go to https://chrome-bug-muted-window.djkato.net/
+
 To test locally, you'll need:
 - Chrome
 - Have Node.js installed ;grab here: https://nodejs.org/en/ 
